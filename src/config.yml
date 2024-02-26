@@ -1,0 +1,11 @@
+mongo:
+  host: serverlessinstance1.okyvjd0.mongodb.net
+  port: '---'
+  username: writex-app
+  password: IvE9BZMGJJD3kZRv
+  database: Writex
+  shard: true
+tokens:
+  secret: f0d4dcafa62c10333bd695f71094cd62c36c5a706fa1d24c26c1609afcfe82955dae26a9
+  expires: 900
+elasticsearch: {}

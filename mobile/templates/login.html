@@ -1,0 +1,56 @@
+<ion-view hide-nav-bar="true" style="background: #eee" class="hide">
+  <ion-content class="padding-sides-45 vcenter" scroll="true">
+    <form name="loginForm" novalidate>
+      <div class="logo-dark">
+        <svg style="width: 280px; height: 70px; margin-bottom: 20px" viewBox="0 0 288.9 70.1">
+          <circle cx="284.9" cy="64.7" r="4" />
+        </svg>
+        <img
+          http-src="/uploads/assets/pageLogo.png"
+          alt="WRITEX"
+          style="width: 280px; height: 70px; margin-bottom: 20px"
+        />
+      </div>
+
+      <div class="list">
+        <label class="item item-input item-floating-label no-padding no-border">
+          <span class="input-label">Username</span>
+          <input
+            type="text"
+            name="username"
+            autocorrect="off"
+            autocapitalize="none"
+            placeholder="Username"
+            class="md"
+            ng-model="auth.username"
+            ng-required="true"
+            ng-minlength="4"
+            required
+          />
+        </label>
+        <p ng-show="invalid.username" class="no-margin text-muted" style="padding-top: 3px">Invalid Username</p>
+        <label class="item item-input item-floating-label no-padding no-border">
+          <span class="input-label">Password</span>
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            class="md"
+            ng-model="auth.password"
+            ng-required="true"
+            ng-minlength="4"
+          />
+        </label>
+        <p ng-show="invalid.password" class="no-margin text-muted" style="padding-top: 3px">Invalid Password</p>
+      </div>
+      <button
+        type="submit"
+        class="button button-block"
+        style="border-radius: 0; background: #e74c3c; color: #fff"
+        ng-click="login(loginForm)"
+      >
+        Login
+      </button>
+    </form>
+  </ion-content>
+</ion-view>

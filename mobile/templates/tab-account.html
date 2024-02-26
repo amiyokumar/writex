@@ -1,0 +1,20 @@
+<ion-view>
+  <ion-nav-title> </ion-nav-title>
+  <ion-content scroll="false">
+    <div class="profile-details center" style="padding-top: 20px">
+      <img http-src="{{accountProfile}}" class="profile-pic" ng-click="showActionSheet($event)" />
+      <h3>{{loggedInUser.fullname}}</h3>
+      <h4>{{loggedInUser.title}}</h4>
+      <h4>{{loggedInUser.email}}</h4>
+      <!-- <input type="file" id="profilePicFile" name="profilePicFile" class="" file-on-change="profilePicFileChanged" /> -->
+    </div>
+    <ion-list>
+      <!-- <ion-toggle  ng-model="settings.enableFriends">
+        Enable Friends
+    </ion-toggle> -->
+      <div class="padding">
+        <button class="button button-full button-assertive" type="button" ng-click="logout($event);">Logout</button>
+      </div>
+    </ion-list>
+  </ion-content>
+</ion-view>
